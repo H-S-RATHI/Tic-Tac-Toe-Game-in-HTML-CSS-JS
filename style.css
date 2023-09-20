@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    height:100vh;
+    background-color: rgb(194, 194, 194);
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 121px);
+    margin-top: 20px;
+    overflow-inline: initial;
+    box-shadow: 3px 4px 6px;
+    background-color: rgb(125, 255, 233);
+
+}
+
+.cell {
+    width: 120px;
+    height: 120px;
+    margin: 0;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+    cursor: pointer;
+    column-gap: 0; 
+}
+
+.status {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #000000;
+}
+
+.restart-button {
+    background: linear-gradient(150deg, rgb(160, 255, 222), rgb(177, 255, 161));
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.winner{
+    background-color: rgb(255, 44, 114);
+    color: #fff;
+}
+
+.br-r{
+    border-right: 0;
+}
+.br-l{
+    border-left: 0;
+}
+.br-t{
+    border-top: 0;
+}
+.br-b{
+    border-bottom: 0;
+}
