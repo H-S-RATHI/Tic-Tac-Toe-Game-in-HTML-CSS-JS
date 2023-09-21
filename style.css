@@ -19,7 +19,7 @@ h1 {
 
 .board {
     display: grid;
-    grid-template-columns: repeat(3, 121px);
+    grid-template-columns: repeat(3, 111px);
     margin-top: 20px;
     overflow-inline: initial;
     box-shadow: 3px 4px 6px;
@@ -28,8 +28,8 @@ h1 {
 }
 
 .cell {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     margin: 0;
     font-size: 32px;
     display: flex;
