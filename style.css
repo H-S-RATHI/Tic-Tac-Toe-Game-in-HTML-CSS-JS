@@ -4,6 +4,7 @@ body {
     display: flex;
     height:100vh;
     background-color: rgb(194, 194, 194);
+    margin: auto;
 }
 
 .container {

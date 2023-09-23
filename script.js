@@ -26,15 +26,15 @@ const checkWinner = () => {
         const [a, b, c] = pattern;
         if (gameBoard[a] && gameBoard[a] === gameBoard[b] && gameBoard[a] === gameBoard[c]) {
             gameActive = false;
-            status.textContent = `${currentPlayer} wins!`;
+            const winner = gameBoard[a];
+            status.textContent = `${winner} wins!`; 
             cells[a].classList.add('winner');
             cells[b].classList.add('winner');
             cells[c].classList.add('winner');
-            audioTurn.pause()
+            audioTurn.pause();
             gameover.play();
         }
     }
-
     if (!gameBoard.includes('') && gameActive) {
         gameActive = false;
         status.textContent = "It's a draw!";
@@ -53,8 +53,8 @@ const handleCellClick = (cell, index) => {
 };
 
 const restartGame = () => {
-  gameover.pause();
-  gameover.currentTime = 0;
+    gameover.pause();
+    gameover.currentTime = 0;
     gameBoard = ['', '', '', '', '', '', '', '', ''];
     gameActive = true;
     currentPlayer = 'X';
